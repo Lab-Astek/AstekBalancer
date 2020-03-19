@@ -1,0 +1,22 @@
+{
+    "name": "AstekBalancer",
+    "version": "1.0",
+    "description": "",
+    "permissions": [
+        "storage",
+        "activeTab",
+        "declarativeContent",
+        "https://intra.epitech.eu/*"
+    ],
+    "background": {
+        "scripts": [ "js/background.js" ],
+        "persistent": false
+    },
+    "page_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "64": "icon.png"
+      }
+    },
+    "manifest_version": 2
+}
