@@ -13,9 +13,9 @@
         "persistent": false
     },
     "page_action": {
-      "default_popup": "popup.html",
+      "default_popup": "views/popup.html",
       "default_icon": {
-        "64": "icon.png"
+        "64": "img/icon.png"
       }
     },
     "manifest_version": 2

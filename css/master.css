@@ -17,12 +17,12 @@ button {
     background: #08f;
     transition: .2s all linear;
 }
-button:hover { background: #07e; }
 button:active {
     transition: .05s all linear;
     background: #07e;
     box-shadow: 0 0 5px 4px rgba(0, 0, 0, 0.1) inset;
 }
+button:hover { background: #07e; }
 
 input {
     max-width: 100px;
