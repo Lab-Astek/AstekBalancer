@@ -1,6 +1,4 @@
 chrome.runtime.onInstalled.addListener(function() {
-    // chrome.browserAction.setBadgeBackgroundColor({ color: [255, 0, 0, 255] });
-    // chrome.browserAction.setBadgeText({text: "10+"});
     chrome.declarativeContent.onPageChanged.removeRules(null, () => {
         chrome.declarativeContent.onPageChanged.addRules([{
             conditions: [
@@ -13,7 +11,6 @@ chrome.runtime.onInstalled.addListener(function() {
             ]
         }]);
     });
-
     chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
         chrome.tabs.getSelected(null, tab => {
             if (new URL(tab.url).hostname != "intra.epitech.eu")
