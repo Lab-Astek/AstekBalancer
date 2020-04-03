@@ -4,6 +4,11 @@ div.row {
     justify-content: center;
 }
 
+h2 {
+    margin: 4px 0 0 0;
+    font-size: 12pt;
+}
+
 button {
     width: 235px;
     margin: 5px;
@@ -24,15 +29,29 @@ button:active {
 }
 button:hover { background: #07e; }
 
-input {
-    max-width: 100px;
+textarea {
     display: inline-block;
+    resize: vertical;
+    min-height: 100px;
     margin: 5px;
     padding: 5px;
     flex: 1;
     outline: none;
     border-radius: 5px;
     border: 1px solid #ccc;
-    transition: .2s all linear;
+    transition: border-color .2s ease-in-out;
+}
+textarea:focus { border-color: #aaf; }
+
+input {
+    display: inline-block;
+    max-width: 100px;
+    margin: 5px;
+    padding: 5px;
+    flex: 1;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border-color .2s ease-in-out;
 }
 input:focus { border-color: #aaf; }

@@ -15,9 +15,11 @@ appointment slots.
 
 ## Usage
 
-1. Come up with a correction group id and share it with the other Asteks
-(starting at `1`).
+1. Get a list of all groups of Asteks available for corrections on an activity.
 1. Navigate to the activity's `/rdv/` page on the intranet.
-1. Click on the extension's icon, enter the total number of groups and your
-group id. Hit "*Apply*".
-1. Only correct the students highlighted in yellow.
+1. Click on the extension's icon, enter the group names separated by a new line.
+Note that you may filter groups to only display a certain period of time or
+specify an offset (typically corresponding to the id of the last group in the
+previous timestamp)
+1. Hit "*Show*". You may also click the "*Save*" button to download a dump of
+each group's assignments as a separate `.txt` file.

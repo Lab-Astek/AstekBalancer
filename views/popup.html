@@ -5,14 +5,26 @@
     </head>
     <body>
         <div class="row">
-            <input id="size-input" type="number" min="1" placeholder="Groups count">
-            <input id="id-input" type="number" min="1" placeholder="Group id">
+            <textarea id="names-textarea" placeholder="Group names, newline-separated"></textarea>
         </div>
         <div class="row">
-            <button id="apply-button">Apply</button>
+            <h2>Filter time:</h2>
         </div>
         <div class="row">
-            <button id="general-button">Show all</button>
+            <input id="time-start-input" type="time" placeholder="Group names, newline-separated" value="00:00">
+            <input id="time-end-input" type="time" placeholder="Group names, newline-separated" value="23:42">
+        </div>
+        <div class="row">
+            <h2>Offset:</h2>
+        </div>
+        <div class="row">
+            <input id="offset-input" type="number" placeholder="Group names, newline-separated" value="0">
+        </div>
+        <div class="row">
+            <button id="show-button">Show</button>
+        </div>
+        <div class="row">
+            <button id="save-button">Save</button>
         </div>
     </body>
     <script src="../js/popup.js"></script>
